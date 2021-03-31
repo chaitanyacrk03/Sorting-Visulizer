@@ -38,7 +38,6 @@ button {
     justify-content: center;
     align-items: bottom;
     margin: auto;
-    border: 2px solid black;
 }
 @media (max-width:500px){
     #nav{
@@ -49,4 +48,9 @@ button {
         width:60% ;
         height: 50%;
 
+}
+    #range{
+        display:flex;
+        flex-direction:column;
+    }
 }
