@@ -28,11 +28,11 @@ h1{
 button {
     padding: 2px;
     background-color: #023047;
-    color: #83c5be;
+    color:#e9c46a; 
     font-size: 20px;
 }
 button:hover{
-    color:#e9c46a; 
+    color: #83c5be;
     cursor: pointer;
 }
 button:active{
