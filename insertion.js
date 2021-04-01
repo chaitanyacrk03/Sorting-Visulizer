@@ -28,8 +28,11 @@ function insertionsort(inputArr) {
             }
         }, time += delay);
         setTimeout(() => {
-            divs[i].style.backgroundColor = "green";
+            divs[i - 1].style.backgroundColor = "green";
         }, time += delay);
         inputArr[j + 1] = current;
     }
+    setTimeout(() => {
+        divs[n - 1].style.backgroundColor = "green";
+    }, time += delay);
 }
