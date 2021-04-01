@@ -30,6 +30,8 @@ button {
     background-color: #023047;
     color:#e9c46a; 
     font-size: 20px;
+    border: 2 solid;
+    border-radius: 5px;
 }
 button:hover{
     color: #83c5be;
