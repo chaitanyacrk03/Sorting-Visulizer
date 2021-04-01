@@ -8,6 +8,7 @@ const speed = document.querySelector("#speed");
 const reset = document.querySelector("#reset");
 const btn = document.querySelector("#heyy");
 const bubbleSort = document.querySelector("#bubble");
+const quickSort = document.querySelector("#quick");
 
 let inputArr = [];
 val = 0;
@@ -59,4 +60,7 @@ btn.addEventListener('click', function () {
 });
 bubbleSort.addEventListener('click', function () {
     bubble();
+});
+quickSort.addEventListener('click', function () {
+    quicksort(inputArr, 0, divs.length - 1);
 });
