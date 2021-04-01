@@ -28,8 +28,16 @@ h1{
 button {
     padding: 2px;
     background-color: #023047;
-    color: #ffb703;
+    color: #83c5be;
     font-size: 20px;
+}
+button:hover{
+    color:#e9c46a; 
+    cursor: pointer;
+}
+button:active{
+    color:#e9c46a; 
+    background-color: #023047b0;
 }
 #array{
     width: 1000px;
