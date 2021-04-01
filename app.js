@@ -10,6 +10,7 @@ const btn = document.querySelector("#heyy");
 const bubbleSort = document.querySelector("#bubble");
 const quickSort = document.querySelector("#quick");
 const insertionSort = document.querySelector("#insert");
+const sortbuttons = document.querySelectorAll(".sort");
 let inputArr = [];
 val = 0;
 const a = [];
@@ -17,6 +18,7 @@ let divs = [];
 reset.addEventListener('click', () => {
     array.innerText = "";
     inputArr = [];
+    enable();
     for (let i = 0; i < len.value; i++) {
         ele = document.createElement("div");
         val = `${Math.random() * 500 + 20}`;
@@ -51,20 +53,34 @@ len.addEventListener('input', function () {
 })
 let time = 0;
 let delay = 10;
+function disable() {
+    for (let button of sortbuttons) {
+        button.disabled = true;
+    }
+}
+function enable() {
+    for (let button of sortbuttons) {
+        button.disabled = false;
+    }
+}
 speed.addEventListener('input', function () {
     delay = 5000 / (speed.value * 10);
 })
 
 btn.addEventListener('click', function () {
+    disable();
     selection_sort();
 });
 bubbleSort.addEventListener('click', function () {
+    disable();
     bubble();
 });
 quickSort.addEventListener('click', function () {
+    disable();
     quicksort(inputArr, 0, divs.length - 1);
 });
 insertionSort.addEventListener('click', function () {
+    disable();
     insertionsort(inputArr);
 });
 
