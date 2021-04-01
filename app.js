@@ -9,7 +9,7 @@ const reset = document.querySelector("#reset");
 const btn = document.querySelector("#heyy");
 const bubbleSort = document.querySelector("#bubble");
 const quickSort = document.querySelector("#quick");
-
+const insertionSort = document.querySelector("#insert");
 let inputArr = [];
 val = 0;
 const a = [];
@@ -64,3 +64,7 @@ bubbleSort.addEventListener('click', function () {
 quickSort.addEventListener('click', function () {
     quicksort(inputArr, 0, divs.length - 1);
 });
+insertionSort.addEventListener('click', function () {
+    insertionsort(inputArr);
+});
+
