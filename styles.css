@@ -9,11 +9,6 @@ div{
 }
 body{
     box-sizing: border-box;
-    background: linear-gradient(
-    to left,
-    rgba(7, 27, 82, 1) 0%,
-    rgba(0, 128, 128, 1) 100%
-  );
 }
 h1{
     text-align: center;
@@ -53,6 +48,11 @@ button:active{
     justify-content: center;
     align-items: bottom;
     margin: auto;
+    background: linear-gradient(
+    to left,
+    rgba(7, 27, 82, 1) 0%,
+    rgba(0, 128, 128, 1) 100%
+  );
 }
 @media (max-width:500px){
     #nav{
